@@ -21,3 +21,9 @@ Route::get('/authors/create', 'AuthorsController@create');
 
 Route::post('/authors', 'AuthorsController@store');
 
+Route::get('/authors/{author}', 'AuthorsController@show');
+
+Route::get('/authors/{author}/edit', 'AuthorsController@edit');
+
+Route::patch('/authors/{author}', 'AuthorsController@update');
+

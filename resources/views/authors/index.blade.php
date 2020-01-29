@@ -9,7 +9,9 @@
   <p>
     <ul>
       @foreach($authors as $author)
-        <li>{{ $author->name }}</li>
+        <li>
+          <a href="/authors/{{ $author->id }}">{{ $author->name}} {{ $author->last_name}}</a>
+        </li>
       @endforeach
     </ul>
   </p>
