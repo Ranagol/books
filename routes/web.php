@@ -17,3 +17,7 @@ Route::get('/contact', function () {
 
 Route::get('/authors', 'AuthorsController@index');
 
+Route::get('/authors/create', 'AuthorsController@create');
+
+Route::post('/authors', 'AuthorsController@store');
+
