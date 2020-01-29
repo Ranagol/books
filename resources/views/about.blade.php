@@ -8,8 +8,15 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+      
     </head>
     <body>
-        <h1>Books project - Vivify</h1>
+    <h2>About us</h2>
+    <p>{{$name}}</p>
+    
+
+
+        
     </body>
 </html>
