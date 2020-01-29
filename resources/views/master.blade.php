@@ -9,6 +9,7 @@
     <a class="nav-item nav-link" href="/">Home </a>
     <a class="nav-item nav-link" href="/about">About</a>
     <a class="nav-item nav-link" href="/contact">Contact</a>
+    <a class="nav-item nav-link" href="/authors">All authors</a>
   </nav>
 
   @yield('content')

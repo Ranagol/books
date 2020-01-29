@@ -42,7 +42,8 @@ class AuthorsController extends Controller
         $author->country = request('country');
         $author->city = request('city');
         $author->save();
-        return view('authors.index');
+        $authors = Author::all();
+        return view('authors.index', compact('authors'));
     }
 
 

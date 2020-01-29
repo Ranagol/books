@@ -14,7 +14,8 @@
     <div>Age: <input type="text" placeholder="age" name="age" value="{{ $author->age }}"></div>
     <div>Country: <input type="text" placeholder="country" name="country" value="{{ $author->country }}"></div>
     <div>City: <input type="text"  name="city" value="{{ $author->city }}"></div>
-    <a class="btn btn-info" href="/authors/{{ $author->id }}">Update author</a>
+    <button>Update author2</button>
+    
   </form>
 
   
