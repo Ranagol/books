@@ -46,5 +46,11 @@ class AuthorsController extends Controller
         return view('authors.index', compact('authors'));
     }
 
+    public function destroy(Author $author){
+        $author->delete();
+        $authors = Author::all();
+        return view('authors.index', compact('authors'));
+    }
+
 
 }

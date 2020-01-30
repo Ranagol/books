@@ -27,3 +27,5 @@ Route::get('/authors/{author}/edit', 'AuthorsController@edit');
 
 Route::patch('/authors/{author}', 'AuthorsController@update');
 
+Route::delete('/authors/{author}', 'AuthorsController@destroy');
+

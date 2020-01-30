@@ -6,6 +6,8 @@
 
 @section('content')
   <h1>This is the Edit Author page</h1>
+
+  <!--EDITING FORM -->
   <form method="POST" action="/authors/{{$author->id}}">
     @csrf
     @method("PATCH")
@@ -14,8 +16,14 @@
     <div>Age: <input type="text" placeholder="age" name="age" value="{{ $author->age }}"></div>
     <div>Country: <input type="text" placeholder="country" name="country" value="{{ $author->country }}"></div>
     <div>City: <input type="text"  name="city" value="{{ $author->city }}"></div>
-    <button>Update author2</button>
-    
+    <button class="btn btn-warning">Update author</button>
+  </form>
+
+  <!--DELETING FORM -->
+  <form method="POST" action="/authors/{{$author->id}}">
+    @csrf
+    @method("PATCH")
+    <button class="btn btn-danger">Delete author</button>
   </form>
 
   
